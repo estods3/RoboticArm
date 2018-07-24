@@ -1,6 +1,6 @@
 # 4 Degree of Freedom (DoF) Open-Loop Robotic Arm
 
-![Alt text](/Documentation/clawWithSectionLabels.png?raw=true "Robotic Arm Sections")
+![Alt text](/documentation/clawWithSectionLabels.png?raw=true "Robotic Arm Sections")
 
 This repository contains code and documentation for a robotic arm uses 4 servo motors to drive 4 degrees of motion. Using Legos, an MSP430 and a perf board circuit, I was able to create a variety of programs that could control the arm.
 
@@ -24,12 +24,12 @@ This design included a “Base” that can rotate the rest of the arm 180 degree
 
 A simple way to move each joint would be to use positional servo motors. However, due to the material (Legos) that I was using for my arm, I felt that this route would put too much stress on the joint motors and the servos wouldn’t be able to hold the weight. For my design, I chose to use a Lego gear boxes with a worm and worm-gear to drive 4 extrusions (2 on each side) making up the "Base Arm" section of the robot. A worm and worm-gear can't be operated in reverse, so the position stays locked in place. I used the same component for the Claw Arm section as well. However, the gear boxes require a continous input since the input shaft must rotate dozens of times to get a rotation on the output. A positional servo motor won't work here because it can't spin that many times consecutively. 
 
-![Alt text](/Documentation/closeupOfPerfBoard.jpg?raw=true "Robotic Arm Main Circuit")
+![Alt text](/documentation/closeupOfPerfBoard.jpg?raw=true "Robotic Arm Main Circuit")
 
 A shift register was used to serially control 6 LEDs. This is sometimes useful when using a small microcontroller with limited GPIO.
 The 6 LEDs are green, yellow and red on the two sides of the arm that lite up when the claw is closing. I created a compact version of the circuit below using perfboard.
 
-![Alt text](/Documentation/schematic visual.png?raw=true "Robotic Arm Schematic")
+![Alt text](/documentation/schematic visual.png?raw=true "Robotic Arm Schematic")
 
 For additional compactness, I also soldered a row of male header pins to the perfboard for the Base Arm, Claw Arm, and Claw servo motors. These motors each have three wires which are subject to getting tangled in the motion of the arm. With this compact circuit, data and power wires for the servos can be stored in the plastic conduit. As for the Base servo, it made more sense for the cable to fixed directly to the USB power cable with a splitter so the data wire could be attached to the microcontroller.
 
