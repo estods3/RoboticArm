@@ -7,16 +7,16 @@ This repository contains code and documentation for a robotic arm uses 4 servo m
 This documentation illustrates the process of how I designed the arm, circuit, and program to run the arm.
 
 ## Components and Software
-Legos(basic blocks, gears, shafts, miscellaneous mechanical parts)
-2 positional Servos (# of each depends on your design)
-2 continuous rotation servos (# of each depends on your design)
-LEDs (2 green, 2 yellow, 2 red)
-Appropriate resistors (for LEDs)
-A “SN74HC595n” shift register (used to serially control LEDs)
-A breadboard and/or perfboard
-A set of solid-core wire and male/female jumper wire
-A TI MSP430G2553 or Arduino
-Energia software: http://energia.nu/download/ (for TI microcontrollers)
+Legos(basic blocks, gears, shafts, miscellaneous mechanical parts)  
+2 positional Servos (# of each depends on your design)  
+2 continuous rotation servos (# of each depends on your design)  
+LEDs (2 green, 2 yellow, 2 red)  
+Appropriate resistors (for LEDs)  
+A “SN74HC595n” shift register (used to serially control LEDs)  
+A breadboard and/or perfboard  
+A set of solid-core wire and male/female jumper wire  
+A TI MSP430G2553 or Arduino  
+Energia software: http://energia.nu/download/ (to cross-compile and flash code for TI microcontrollers)  
 
 ## Hardware
 
