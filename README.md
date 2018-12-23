@@ -29,7 +29,7 @@ A simple way to move each joint would be to use positional servo motors. However
 A shift register was used to serially control 6 LEDs. This is sometimes useful when using a small microcontroller with limited GPIO.
 The 6 LEDs are green, yellow and red on the two sides of the arm that lite up when the claw is closing. I created a compact version of the circuit below using perfboard.
 
-![Alt text](/documentation/schematicvisual.png?raw=true "Robotic Arm Schematic")
+![Alt text](/documentation/schematic%20visual.png?raw=true "Robotic Arm Schematic")
 
 For additional compactness, I also soldered a row of male header pins to the perfboard for the Base Arm, Claw Arm, and Claw servo motors. These motors each have three wires which are subject to getting tangled in the motion of the arm. With this compact circuit, data and power wires for the servos can be stored in the plastic conduit. As for the Base servo, it made more sense for the cable to fixed directly to the USB power cable with a splitter so the data wire could be attached to the microcontroller.
 
